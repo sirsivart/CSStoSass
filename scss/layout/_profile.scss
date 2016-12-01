@@ -1,0 +1,63 @@
+.profile {
+  margin: 1em .5em;
+
+  @extend %centered;
+
+  @include tablet {
+    display: inline-block;
+    width: 92%;
+    margin-right: 4%;
+    margin-left: 4%;
+  }
+
+
+  @include desktop {
+    display: inline-block;
+    float: left;
+    width: 92%;
+    margin: 0 4%;
+    padding: 0 0 45px;
+  }
+}
+
+.profile-photo {
+  max-width: 75%;
+  box-shadow: 2px 3px 6px 0 rgba(0, 0, 0, 0.32);
+
+  @include tablet {
+    display: inline-block;
+    float: right;
+    width: 38%;
+    margin: 0;
+  }
+
+
+  @include desktop {
+    display: inline-block;
+    float: right;
+    width: 40%;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.background-text {
+  padding: 0 .5em;
+  color: #{$profile-background-text};
+
+  @include tablet {
+    font-size: #{$background-text-tab};
+    width: 62%;
+    padding: 0 15px 0 0;
+    text-align: left;
+  }
+
+
+  @include desktop {
+    width: 60%;
+    margin-left: 0;
+    padding-right: 30px;
+    padding-left: 0;
+    text-align: left;
+  }
+}
